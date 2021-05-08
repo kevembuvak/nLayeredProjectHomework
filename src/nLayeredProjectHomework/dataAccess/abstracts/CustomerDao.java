@@ -2,6 +2,8 @@ package nLayeredProjectHomework.dataAccess.abstracts;
 
 import nLayeredProjectHomework.entities.concretes.Customer;
 
+import java.util.List;
+
 public interface CustomerDao {
     boolean signUp(Customer customer);
     boolean logIn(Customer customer);
@@ -11,5 +13,6 @@ public interface CustomerDao {
     String getFirstName(int id);
     String getLastName(int id);
     boolean getIsVerified(int id);
+    List<Customer> getAll();
 
 }

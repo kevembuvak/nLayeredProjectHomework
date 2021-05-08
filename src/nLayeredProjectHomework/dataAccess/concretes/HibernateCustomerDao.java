@@ -3,6 +3,8 @@ package nLayeredProjectHomework.dataAccess.concretes;
 import nLayeredProjectHomework.dataAccess.abstracts.CustomerDao;
 import nLayeredProjectHomework.entities.concretes.Customer;
 
+import java.util.List;
+
 public class HibernateCustomerDao implements CustomerDao {
     @Override
     public boolean signUp(Customer customer) {
@@ -44,5 +46,10 @@ public class HibernateCustomerDao implements CustomerDao {
     @Override
     public boolean getIsVerified(int id) {
         return false;
+    }
+
+    @Override
+    public List<Customer> getAll() {
+        return null;
     }
 }

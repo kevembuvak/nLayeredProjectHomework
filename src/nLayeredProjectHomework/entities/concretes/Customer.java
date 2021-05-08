@@ -18,6 +18,7 @@ public class Customer implements Entity {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.isVerified = false;
     }
 
     public int getId() {
@@ -60,11 +61,11 @@ public class Customer implements Entity {
         this.password = password;
     }
 
-    public boolean isVerified() {
+    public boolean getIsVerified() {
         return isVerified;
     }
 
-    public void setVerified(boolean verified) {
+    public void setIsVerified(boolean verified) {
         isVerified = verified;
     }
 }
